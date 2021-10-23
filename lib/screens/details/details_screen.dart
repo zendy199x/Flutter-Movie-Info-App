@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_info/models/movie.dart';
+import 'package:movie_info/screens/details/components/body.dart';
 
 class DetailsScreen extends StatelessWidget {
   const DetailsScreen({
@@ -11,6 +12,8 @@ class DetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Body(movie: movie),
+    );
   }
 }
